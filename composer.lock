@@ -134,13 +134,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:anibalealvarezs/triple-whale-api.git",
-                "reference": "781d0ac9a01ab68af11bd284fcdfbb3dc651e409"
+                "reference": "069fb973395052f50d97135e80c763a4b8802466"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.anibalalvarez.com/dist/anibalealvarezs/triple-whale-api/anibalealvarezs-triple-whale-api-781d0ac9a01ab68af11bd284fcdfbb3dc651e409-zip-b753c3.zip",
-                "reference": "781d0ac9a01ab68af11bd284fcdfbb3dc651e409",
-                "shasum": "616a10a92fca1c65ddc5ef8f484368ab08b33df9"
+                "url": "https://satis.anibalalvarez.com/dist/anibalealvarezs/triple-whale-api/anibalealvarezs-triple-whale-api-069fb973395052f50d97135e80c763a4b8802466-zip-a2ca03.zip",
+                "reference": "069fb973395052f50d97135e80c763a4b8802466",
+                "shasum": "bdd09541f996c67bd70ea150a7318904d060c0a8"
             },
             "require": {
                 "anibalealvarezs/api-client-skeleton": "@dev",
@@ -178,7 +178,7 @@
                 }
             ],
             "description": "description",
-            "time": "2026-03-07T02:32:02+00:00"
+            "time": "2026-04-08T22:43:23+00:00"
         },
         {
             "name": "carbonphp/carbon-doctrine-types",
