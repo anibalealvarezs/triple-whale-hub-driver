@@ -41,4 +41,9 @@ class TripleWhaleAuthProvider implements AuthProviderInterface
     }
 
     public function setAuthProvider(AuthProviderInterface $provider): void {}
+
+    public function updateCredentials(array $credentials): void
+    {
+        $this->credentials = array_merge($this->credentials, $credentials);
+    }
 }
