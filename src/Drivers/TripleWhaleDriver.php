@@ -53,4 +53,31 @@ class TripleWhaleDriver implements SyncDriverInterface
     {
         return null;
     }
+
+    /**
+     * @inheritdoc
+     */
+    public function getConfigSchema(): array
+    {
+        return [
+            'global' => [
+                'enabled' => true,
+                'cache_history_range' => '1 year',
+                'cache_aggregations' => false,
+            ],
+            'entity' => [
+                'id' => '',
+                'shop_domain' => '',
+                'enabled' => true,
+            ]
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function validateConfig(array $config): array
+    {
+        return $config;
+    }
 }
