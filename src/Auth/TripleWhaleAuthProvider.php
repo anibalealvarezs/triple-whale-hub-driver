@@ -2,7 +2,7 @@
 
 namespace Anibalealvarezs\TripleWhaleHubDriver\Auth;
 
-use Anibalealvarezs\ApiDriverCore\Interfaces\AuthProviderInterface;
+use Anibalealvarezs\ApiSkeleton\Interfaces\AuthProviderInterface;
 
 class TripleWhaleAuthProvider implements AuthProviderInterface
 {
