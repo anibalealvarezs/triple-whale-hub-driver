@@ -9,30 +9,11 @@ use Symfony\Component\HttpFoundation\Response;
 use Psr\Log\LoggerInterface;
 use DateTime;
 use Anibalealvarezs\ApiDriverCore\Interfaces\SeederInterface;
+use Anibalealvarezs\ApiDriverCore\Traits\SyncDriverTrait;
 
 class TripleWhaleDriver implements SyncDriverInterface
 {
-
-    /**
-     * Store credentials for this driver.
-     * 
-     * @param array $credentials
-     * @return void
-     */
-    public static function storeCredentials(array $credentials): void
-    {
-        // No implementation needed for this driver
-    }
-
-    /**
-     * Get the public resources exposed by this driver.
-     * 
-     * @return array
-     */
-    public static function getPublicResources(): array
-    {
-        return [];
-    }
+    use SyncDriverTrait;
 
     /**
      * Get the display label for the channel.
@@ -54,15 +35,6 @@ class TripleWhaleDriver implements SyncDriverInterface
         return 'TW';
     }
 
-    /**
-     * Get the routes served by this driver.
-     * 
-     * @return array
-     */
-    public static function getRoutes(): array
-    {
-        return [];
-    }
 
     /**
      * @inheritdoc
@@ -84,10 +56,7 @@ class TripleWhaleDriver implements SyncDriverInterface
         ];
     }
 
-    public static function getCommonConfigKey(): ?string
-    {
-        return null;
-    }
+
     use HasUpdatableCredentials;
 
     private ?AuthProviderInterface $authProvider = null;
@@ -173,6 +142,8 @@ class TripleWhaleDriver implements SyncDriverInterface
     {
         return [];
     }
+
+
 
     /**
      * @inheritdoc
