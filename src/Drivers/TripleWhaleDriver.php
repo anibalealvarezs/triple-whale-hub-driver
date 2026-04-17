@@ -83,7 +83,14 @@ class TripleWhaleDriver implements SyncDriverInterface
         return 'triplewhale';
     }
 
-    public function sync(DateTime $startDate, DateTime $endDate, array $config = []): Response
+    public function sync(
+        DateTime $startDate,
+        DateTime $endDate,
+        array $config = [],
+        ?callable $shouldContinue = null,
+        ?callable $identityMapper = null
+    ): Response
+
     {
         if ($this->logger) {
             $this->logger->info("TripleWhaleDriver (Modular): No native implementation yet. Sync skipped.");
@@ -153,7 +160,8 @@ class TripleWhaleDriver implements SyncDriverInterface
     /**
      * @inheritdoc
      */
-    public function initializeEntities(mixed $entityManager, array $config = []): array
+    public function initializeEntities(array $config = []): array
+
     {
         return ['initialized' => 0, 'skipped' => 0];
     }
@@ -161,7 +169,8 @@ class TripleWhaleDriver implements SyncDriverInterface
     /**
      * @inheritdoc
      */
-    public function reset(mixed $entityManager, string $mode = 'all', array $config = []): array
+    public function reset(string $mode = 'all', array $config = []): array
+
     {
         return ['cleared' => 0, 'mode' => $mode];
     }
