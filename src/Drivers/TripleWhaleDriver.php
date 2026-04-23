@@ -150,7 +150,7 @@ class TripleWhaleDriver implements SyncDriverInterface
     {
     }
 
-    public function getAssetPatterns(): array
+    public static function getAssetPatterns(): array
     {
         return [];
     }
