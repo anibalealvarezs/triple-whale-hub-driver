@@ -12,13 +12,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:anibalealvarezs/api-client-skeleton.git",
-                "reference": "315dcf1cfd24c01640a9acbadfa114cc6affb6c7"
+                "reference": "d599bf46890e31826604fc1e788d475f966aa9f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.anibalalvarez.com/dist/anibalealvarezs/api-client-skeleton/anibalealvarezs-api-client-skeleton-315dcf1cfd24c01640a9acbadfa114cc6affb6c7-zip-302e5f.zip",
-                "reference": "315dcf1cfd24c01640a9acbadfa114cc6affb6c7",
-                "shasum": "461874323650ff531c9a8bc287a211afa512275d"
+                "url": "https://satis.anibalalvarez.com/dist/anibalealvarezs/api-client-skeleton/anibalealvarezs-api-client-skeleton-d599bf46890e31826604fc1e788d475f966aa9f9-zip-5701fe.zip",
+                "reference": "d599bf46890e31826604fc1e788d475f966aa9f9",
+                "shasum": "f150c2a614ceba61754b6044b30a9af95880b597"
             },
             "require": {
                 "anibalealvarezs/oauth-v1": "@dev",
@@ -68,7 +68,7 @@
             "support": {
                 "issues": "https://github.com/anibalealvarezs/api-client-skeleton/issues"
             },
-            "time": "2026-05-03T13:13:06+00:00"
+            "time": "2026-05-03T13:26:35+00:00"
         },
         {
             "name": "anibalealvarezs/api-driver-core",
@@ -76,20 +76,20 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:anibalealvarezs/api-driver-core.git",
-                "reference": "8d11520e56fa8903ca9d7712b229372053f8aacf"
+                "reference": "5a19021a545b5fb91494046caf2bb62440c0ac79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.anibalalvarez.com/dist/anibalealvarezs/api-driver-core/anibalealvarezs-api-driver-core-8d11520e56fa8903ca9d7712b229372053f8aacf-zip-87d3d6.zip",
-                "reference": "8d11520e56fa8903ca9d7712b229372053f8aacf",
-                "shasum": "3f29ae371335e484698905c35daac6264c7f06dd"
+                "url": "https://satis.anibalalvarez.com/dist/anibalealvarezs/api-driver-core/anibalealvarezs-api-driver-core-5a19021a545b5fb91494046caf2bb62440c0ac79-zip-19e476.zip",
+                "reference": "5a19021a545b5fb91494046caf2bb62440c0ac79",
+                "shasum": "ac8621404628f89e10fbee2d2393f6dd5d6d2458"
             },
             "require": {
                 "anibalealvarezs/api-client-skeleton": "dev-main",
                 "doctrine/collections": "^2.0",
                 "doctrine/orm": "^2.0 || ^3.0",
                 "nesbot/carbon": "^2.61 || ^3.0",
-                "php": ">=8.1",
+                "php": ">=8.3",
                 "predis/predis": "^2.0",
                 "psr/log": "^1.1 || ^2.0 || ^3.0",
                 "symfony/http-foundation": "^6.0 || ^7.0",
@@ -117,7 +117,7 @@
                 }
             ],
             "description": "Core interfaces and orchestration logic for APIs Hub drivers.",
-            "time": "2026-05-02T03:40:42+00:00"
+            "time": "2026-05-03T13:51:26+00:00"
         },
         {
             "name": "anibalealvarezs/oauth-v1",
@@ -184,13 +184,13 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:anibalealvarezs/triple-whale-api.git",
-                "reference": "634c5701b75a646ea6fcb11a264ee509002dab13"
+                "reference": "7f49c1d427a12e2dc9715ebfc85ef0ab83bda595"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://satis.anibalalvarez.com/dist/anibalealvarezs/triple-whale-api/anibalealvarezs-triple-whale-api-634c5701b75a646ea6fcb11a264ee509002dab13-zip-70b23c.zip",
-                "reference": "634c5701b75a646ea6fcb11a264ee509002dab13",
-                "shasum": "7f10bd0202e374ed38d2a5d37030d56cd4f57d7e"
+                "url": "https://satis.anibalalvarez.com/dist/anibalealvarezs/triple-whale-api/anibalealvarezs-triple-whale-api-7f49c1d427a12e2dc9715ebfc85ef0ab83bda595-zip-8b7961.zip",
+                "reference": "7f49c1d427a12e2dc9715ebfc85ef0ab83bda595",
+                "shasum": "f19fea9f77badcd7a1696104efc675ecd6f82e00"
             },
             "require": {
                 "anibalealvarezs/api-client-skeleton": "dev-main",
@@ -199,7 +199,7 @@
                 "guzzlehttp/guzzle": "^7.0",
                 "monolog/monolog": "^2.0 || ^3.0",
                 "nesbot/carbon": "^2.61 || ^3.0",
-                "php": ">=8.1",
+                "php": ">=8.3",
                 "psr/log": "^1.0 || ^2.0 || ^3.0",
                 "symfony/yaml": "^6.0 || ^7.0"
             },
@@ -226,12 +226,12 @@
             ],
             "authors": [
                 {
-                    "name": "Aníbal Álvarez",
+                    "name": "AnÃƒÂ­bal ÃƒÂlvarez",
                     "email": "anibalealvarezs@gmail.com"
                 }
             ],
             "description": "description",
-            "time": "2026-05-03T03:01:36+00:00"
+            "time": "2026-05-03T13:41:25+00:00"
         },
         {
             "name": "carbonphp/carbon-doctrine-types",
