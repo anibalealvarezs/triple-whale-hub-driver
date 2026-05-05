@@ -10,10 +10,25 @@ use Psr\Log\LoggerInterface;
 use DateTime;
 use Anibalealvarezs\ApiDriverCore\Interfaces\SeederInterface;
 use Anibalealvarezs\ApiDriverCore\Traits\SyncDriverTrait;
+use Anibalealvarezs\ApiDriverCore\Interfaces\CanonicalMetricDictionaryProviderInterface;
 
-class TripleWhaleDriver implements SyncDriverInterface
+use Anibalealvarezs\ApiDriverCore\Interfaces\AggregationProfileProviderInterface;
+use Anibalealvarezs\ApiDriverCore\Classes\AggregationProfileTemplates;
+
+class TripleWhaleDriver implements SyncDriverInterface, CanonicalMetricDictionaryProviderInterface, AggregationProfileProviderInterface
 {
     use SyncDriverTrait;
+    
+    public static function getAggregationProfiles(): array
+    {
+        return [
+            AggregationProfileTemplates::adsHierarchyProfile(
+                channel: 'triplewhale',
+                key: 'triplewhale_ads',
+                label: 'TripleWhale Ads Performance'
+            ),
+        ];
+    }
 
     /**
      * Get the display label for the channel.
@@ -152,6 +167,25 @@ class TripleWhaleDriver implements SyncDriverInterface
     public static function getAssetPatterns(): array
     {
         return [];
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public static function getCanonicalMetricDictionary(): array
+    {
+        return [
+            'spend' => ['spend'],
+            'clicks' => ['clicks'],
+            'impressions' => ['impressions'],
+            'conversions' => ['conversions'],
+            'roas_purchase' => ['roas'],
+        ];
+    }
+
+    public static function getPlatformEntityIdField(): string
+    {
+        return 'shop_domain';
     }
 
 
